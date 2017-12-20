@@ -16,20 +16,5 @@ module.exports = function(app){
 		loverInfo.push(newLover);
 	})
 
-	/*app.post("/api/friendsList", function(req,res){
-		var lowDiff = 50;
-		var chosenLover;
-		loverInfo.forEach(function(storedLovers){
-			var diff = 0;
-			for(i = 0; i < storedLovers.scores.length; i++){
-				diff+=Math.abs(storedLovers.scores[i] - req.body.scores[i]);
-			} if(diff<lowDiff){
-				lowDiff = diff;
-				chosenLover = storedLovers;
-			}
-		});
-
-		res.json(chosenLover);
-		loverInfo.push(req.body);
-	});*/
+	
 };

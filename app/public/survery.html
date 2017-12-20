@@ -156,7 +156,6 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -215,21 +214,18 @@ $("#submit").on("click", function(){
 			$("#q9").val(),
 			$("#q10").val()
 		]};
-	//console.log("test");
-	//console.log(newLover);
+	
 	var currentURL = window.location.origin;
 	$.post(currentURL + "/api/loverInfo", newLover, function(){
 		console.log(newLover);
 	})
 
+	//This is commented out as I had not fully got it working yet and would like too.
+
 	//$.post("/api/friendsList", newLover, function(data){
 		//$("#match-name").text(data.name);
 		//$("#match.img").attr("src", data.photo);
 		//$("results-modal").modal("toggle");
-
-		// console.log(data.name);
-		//var sendLover = "Your true lover is " + data.name;
-		//var sendImg = "<img src = "'+ data.photo + '">";
 	//})
 
 
