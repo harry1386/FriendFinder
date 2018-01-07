@@ -2,8 +2,14 @@
 <html>
 <head>
 	<title></title>
-	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  	   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  	   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  	   <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  										crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
@@ -22,7 +28,7 @@
 		<h3>Question 1</h3>
 		<h4>You rather have a good ol' beer than some fancy glass of wine.</h4>
 			<form action="/action_page.php">
-			  <select name="q1"  style="width: 125px";>
+			  <select id="q1"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -34,7 +40,7 @@
 		<h3>Question 2</h3>
 		<h4>Netflix and chill is much better than meeting over coffee.</h4>
 			<form action="/action_page.php">
-			  <select name="q2"  style="width: 125px";>
+			  <select id="q2"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -46,7 +52,7 @@
 		<h3>Question 3</h3>
 		<h4>Dogs are superior to cats.</h4>
 			<form action="/action_page.php">
-			  <select name="q3"  style="width: 125px";>
+			  <select id="q3"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -58,7 +64,7 @@
 		<h3>Question 4</h3>
 		<h4>Surf and turf is double the fun.</h4>
 			<form action="/action_page.php">
-			  <select name="q4"  style="width: 125px";>
+			  <select id="q4"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -70,7 +76,7 @@
 		<h3>Question 5</h3>
 		<h4>KSU is far superior to KU.</h4>
 			<form action="/action_page.php">
-			  <select name="q5"  style="width: 125px";>
+			  <select id="q5"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -82,7 +88,7 @@
 		<h3>Question 6</h3>
 		<h4>The NFC is a better conference than the AFC.</h4>
 			<form action="/action_page.php">
-			  <select name="q6"  style="width: 125px";>
+			  <select id="q6"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -94,7 +100,7 @@
 		<h3>Question 7</h3>
 		<h4>Downton Abbey is one of the greatest shows ever.</h4>
 			<form action="/action_page.php">
-			  <select name="q7"  style="width: 125px";>
+			  <select id="q7"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -106,7 +112,7 @@
 		<h3>Question 8</h3>
 		<h4>Red is sexier than black.</h4>
 			<form action="/action_page.php">
-			  <select name="q8"  style="width: 125px";>
+			  <select id="q8"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -118,7 +124,7 @@
 		<h3>Question 9</h3>
 		<h4>Spray Whip Cream over Cool-Whip.</h4>
 			<form action="/action_page.php">
-			  <select name="q9"  style="width: 125px";>
+			  <select id="q9"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -130,7 +136,7 @@
 		<h3>Question 10</h3>
 		<h4>Leather is far superior than faux-leather.</h4>
 			<form action="/action_page.php">
-			  <select name="q10"  style="width: 125px";>
+			  <select id="q10"  style="width: 125px";>
 			    <option value="1">1 (Most Agree)</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -142,11 +148,15 @@
 		<hr>
 		<input type="submit" id="submit">
 	</div>
+
+
 	<div class="footer">
 	   		<a href="/api/loverInfo">API Lovers List</a>
        		|
        		<a href="https://github.com/harry1386">GitHub Repo</a>
 		</div>
+
+
 	<div id="results-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -156,6 +166,9 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
+
+		  <img id="match-img" class=".img-thumbnail">
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -198,35 +211,39 @@
 <script type="text/javascript">
 
 	
-$("#submit").on("click", function(){
+$("#submit").on("click", function(event){
+	event.preventDefault();
+	console.log("This Works");
+
 	var newLover = {
 		name: $("#name").val().trim(),
 		photo: $("#photo").val().trim(),
 		scores: [
-			$("#q1").val(),
-			$("#q2").val(),
-			$("#q3").val(),
-			$("#q4").val(),
-			$("#q5").val(),
-			$("#q6").val(),
-			$("#q7").val(),
-			$("#q8").val(),
-			$("#q9").val(),
-			$("#q10").val()
-		]};
+			$("#q1").val().slice(0,1),
+			$("#q2").val().trim(),
+			$("#q3").val().trim(),
+			$("#q4").val().trim(),
+			$("#q5").val().trim(),
+			$("#q6").val().trim(),
+			$("#q7").val().trim(),
+			$("#q8").val().trim(),
+			$("#q9").val().trim(),
+			$("#q10").val().slice(0,1)
+			]
+	};
+
+
+	console.log(newLover);
+	
 	
 	var currentURL = window.location.origin;
-	$.post(currentURL + "/api/loverInfo", newLover, function(){
-		console.log(newLover);
+	$.post(currentURL + "/api/loverInfo", newLover)
+	.done(function(data){
+		console.log("New Lover added to sexy list")
+		$("#match-name").text(data.name);
+		$("#match-img").attr("src", data.photo);
+		$("results-modal").modal("toggle");
 	})
-
-	//This is commented out as I had not fully got it working yet and would like too.
-
-	//$.post("/api/friendsList", newLover, function(data){
-		//$("#match-name").text(data.name);
-		//$("#match.img").attr("src", data.photo);
-		//$("results-modal").modal("toggle");
-	//})
 
 
 })
