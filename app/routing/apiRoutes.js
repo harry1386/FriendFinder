@@ -14,6 +14,8 @@ module.exports = function(app){
 	})
 
 	app.post("/api/loverInfo", function(req, res){
+		//var newLoverObj = req.body;
+
 		var newLover = req.body;
 
 		//This is to make sure I am getting the new object
@@ -31,8 +33,6 @@ module.exports = function(app){
 		// 'scores[]': [2,5,3,4,1,2,3,1,4,1] or whatever the values don't matter, but why is scores itsel a string?
 		//is that the issue? I've spent way to much time of this and I can't figure it out
 		console.log("-------------------------------------");
-		console.log(this[req.body.scores]);
-		console.log(newLover.scores);
 		console.log(nlScores);
 		console.log("-------------------------------------");
 
@@ -53,6 +53,8 @@ module.exports = function(app){
 		}
 
 		loverInfo.push(newLover);
+
+		console.log(loverMatch);
 
 		res.json(loverMatch);
 	})
